@@ -1,0 +1,66 @@
+# Secrets and credentials — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets.yaml
+secrets.json
+*.secret
+credentials.json
+service_account.json
+
+# Home Assistant runtime / local config dumps
+.storage/
+.cloud/
+.HA_VERSION
+home-assistant.log
+home-assistant.log.*
+home-assistant_v2.db
+home-assistant_v2.db-*
+*.db
+*.db-shm
+*.db-wal
+tts/
+deps/
+www/
+custom_components/**/__pycache__/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local media generated for HomePod playback
+/media/
+*.mp3
+*.wav
+*.m4a
+
+# Agent / tooling scratch
+agent-tools/
